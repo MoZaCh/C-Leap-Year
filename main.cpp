@@ -8,7 +8,7 @@ int main() {
     int choice = 0;
     int year;
     string name;
-    bool quit = false;
+    bool quit = false; //Flag set to false for the do-while loop
     bool isLeap;
 
     do
@@ -25,13 +25,13 @@ int main() {
             cin >> name;
             cout << "Enter the year that you would like to check:" << endl;
             cin >> year;
-            isLeap = leapYear(year);
+            isLeap = leapYear(year); //Function call with given argument
             cout << boolalpha << isLeap << endl;
             cout << "----------------------------" << endl;
             break;
 
         case 2:
-            quit = true;
+            quit = true; //Setting flag to true to exit do-while loop
         }
 
     } while (!quit);
